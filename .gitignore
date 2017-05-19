@@ -22,3 +22,6 @@
 /sitemap.xml
 
 /vendor/*
+/vendor
+/*.bz2
+/.idea

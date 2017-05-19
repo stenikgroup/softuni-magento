@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <naya_facebookcomments translate="label" module="naya_facebookcomments">
+            <class>separator-top</class>
+            <label>Facebook comments</label>
+            <tab>naya</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label" module="naya_facebookcomments">
+                    <label>General settings</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <site_id translate="label">
+                            <label>ID of your site</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[<a href="http://developers.facebook.com/setup/" target="_bank">Register here</a>]]></comment>
+                        </site_id>
+                        <language translate="label">
+                            <label>Language</label>
+                            <source_model>naya_facebookcomments/languages</source_model>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </language>
+                        <num_post translate="label">
+                            <label>Number of comments</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </num_post>
+                    </fields>
+                </general>
+            </groups>
+        </naya_facebookcomments>
+    </sections>
+</config>
