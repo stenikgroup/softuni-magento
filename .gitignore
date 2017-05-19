@@ -1,5 +1,3 @@
-.htaccess
-app/etc/local.xml
 
 /downloader/.cache
 /downloader/*.cfg
