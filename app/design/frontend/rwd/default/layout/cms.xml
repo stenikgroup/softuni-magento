@@ -74,7 +74,10 @@ Default layout, loads most of the pages
     </cms_page>
 
     <cms_index_index translate="label">
-        <label>CMS Home Page</label>
+        <label>CMS Home Page</label>	
+        <reference name="content">	
+            <block type="bestseller/bestseller" name="bestseller" template="bestseller/bestseller-responsive.phtml"/>
+        </reference>
     </cms_index_index>
 
     <cms_index_defaultindex>
