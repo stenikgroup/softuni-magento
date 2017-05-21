@@ -4,8 +4,53 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e48d7a356ba72f2c3a9c8be58692029e",
+    "content-hash": "6b1e93435e0a159b113a517381614156",
     "packages": [
+        {
+            "name": "aoepeople/aoe_scheduler",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AOEpeople/Aoe_Scheduler.git",
+                "reference": "6c06a4fd89c702c36205a5c0d359cc3d1ba69ed9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AOEpeople/Aoe_Scheduler/zipball/6c06a4fd89c702c36205a5c0d359cc3d1ba69ed9",
+                "reference": "6c06a4fd89c702c36205a5c0d359cc3d1ba69ed9",
+                "shasum": ""
+            },
+            "require": {
+                "magento-hackathon/magento-composer-installer": "*",
+                "php": ">=5.3"
+            },
+            "replace": {
+                "fbrnc/aoe_scheduler": "*"
+            },
+            "type": "magento-module",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Fabrizio Branca",
+                    "email": "firstname.lastname@aoe.com",
+                    "role": "Author/Maintainer"
+                },
+                {
+                    "name": "Lee Saferite",
+                    "email": "lee.saferite@aoe.com",
+                    "role": "Contributor/Maintainer"
+                }
+            ],
+            "description": "Magento Cron Scheduler",
+            "homepage": "https://github.com/AOEpeople/Aoe_Scheduler",
+            "support": {
+                "source": "https://github.com/AOEpeople/Aoe_Scheduler/tree/v1.0.1",
+                "issues": "https://github.com/AOEpeople/Aoe_Scheduler/issues"
+            },
+            "time": "2015-03-16T05:45:08+00:00"
+        },
         {
             "name": "eloquent/composer-config-reader",
             "version": "2.0.2",
