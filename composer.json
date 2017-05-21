@@ -4,10 +4,17 @@
         "firegento": {
             "type": "composer",
             "url": "https://packages.firegento.com"
-        }
+        },
+		"aydus": {
+		    "type": "vcs",
+			"url": "https://github.com/aydus/BlogWidget.git"
+		}
     },
     "require": {
-        "magento-hackathon/magento-composer-installer": "3.0.*"
+        "magento-hackathon/magento-composer-installer": "3.0.*",
+		"connect20/reviews_sidebar": "1.0.6",
+		"connect20/aw_blog": "1.3.*",
+		"aydus/blogwidget": "*"
     },
     "extra": {
         "magento-root-dir" : "./",
