@@ -1,3 +1,5 @@
+/nbproject/*
+
 /.htaccess
 /app/etc/local.xml
 
