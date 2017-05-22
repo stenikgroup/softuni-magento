@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <softuni_submission_form_index>
+        <reference name="content">
+            <block type="core/template" name="softuni_submission.form" template="softuni/submission/form.phtml">
+
+            </block>
+        </reference>
+    </softuni_submission_form_index>
+</layout>
