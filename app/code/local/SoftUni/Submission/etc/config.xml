@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SoftUni_Submission>
+            <version>1.0.0</version>
+        </SoftUni_Submission>
+    </modules>
+
+    <global>
+        <helpers>
+            <softuni_submission>
+                <class>SoftUni_Submission_Helper</class>
+            </softuni_submission>
+        </helpers>
+
+        <models>
+            <softuni_submission>
+                <class>SoftUni_Submission_Model</class>
+                <resourceModel>softuni_submission_resource</resourceModel>
+            </softuni_submission>
+            <softuni_submission_resource>
+                <class>SoftUni_Submission_Model_Resource</class>
+                <entities>
+                    <submission>
+                        <table>softuni_submission_submission</table>
+                    </submission>
+                </entities>
+            </softuni_submission_resource>
+        </models>
+
+        <resources>
+            <softuni_submission_setup>
+                <setup>
+                    <module>SoftUni_Submission</module>
+                </setup>
+            </softuni_submission_setup>
+        </resources>
+    </global>
+
+    <frontend>
+        <routers>
+            <softuni_submission>
+                <use>standard</use>
+                <args>
+                    <module>SoftUni_Submission</module>
+                    <frontName>softuni_submission</frontName>
+                </args>
+            </softuni_submission>
+        </routers>
+        <layout>
+            <updates>
+                <softuni_submission module="SoftUni_Submission">
+                    <file>softuni_submission.xml</file>
+                </softuni_submission>
+            </updates>
+        </layout>
+    </frontend>
+</config>
