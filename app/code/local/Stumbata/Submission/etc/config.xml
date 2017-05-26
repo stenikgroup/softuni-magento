@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Stumbata_Submission>
+            <version>1.0.0</version>
+        </Stumbata_Submission>
+    </modules>
+
+    <global>
+        <helpers>
+            <stumbata_submission>
+                <class>Stumbata_Submission_Helper</class>
+            </stumbata_submission>
+        </helpers>
+
+        <models>
+            <stumbata_submission>
+                <class>Stumbata_Submission_Model</class>
+                <resourceModel>stumbata_submission_resource</resourceModel>
+            </stumbata_submission>
+            <stumbata_submission_resource>
+                <class>Stumbata_Submission_Model_Resource</class>
+                <entities>
+                    <submission>
+                        <table>stumbata_submission_submission</table>
+                    </submission>
+                </entities>
+            </stumbata_submission_resource>
+
+            <stumbata_submission_address>
+                <class>Stumbata_Submission_Model_Address</class>
+                <resourceModel>stumbata_submission_address_resource</resourceModel>
+            </stumbata_submission_address>
+            <stumbata_submission_address_resource>
+                <class>Stumbata_Submission_Model_Resource_Address</class>
+                <entities>
+                    <address>
+                        <table>stumbata_submission_address</table>
+                    </address>
+                </entities>
+            </stumbata_submission_address_resource>
+
+        </models>
+
+        <resources>
+            <stumbata_submission_setup>
+                <setup>
+                    <module>Stumbata_Submission</module>
+                </setup>
+            </stumbata_submission_setup>
+            <stumbata_address_setup>
+                <setup>
+                    <module>Stumbata_Submission</module>
+                </setup>
+            </stumbata_address_setup>
+        </resources>
+    </global>
+
+    <frontend>
+        <routers>
+            <stumbata_submission>
+                <use>standard</use>
+                <args>
+                    <module>Stumbata_Submission</module>
+                    <frontName>stumbata_submission</frontName>
+                </args>
+            </stumbata_submission>
+        </routers>
+        <layout>
+            <updates>
+                <stumbata_submission module="Stumbata_Submission">
+                    <file>stumbata_submission.xml</file>
+                </stumbata_submission>
+            </updates>
+        </layout>
+    </frontend>
+</config>
