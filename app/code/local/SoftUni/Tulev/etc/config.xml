@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE config>
+
+<config>
+    <modules>
+        <SoftUni_Tulev>
+            <version>0.0.0</version>
+        </SoftUni_Tulev>
+    </modules>
+    <global>
+        <models>
+            <example>
+                <class>SoftUni_Tulev_Model</class>
+            </example>
+        </models>
+        <blocks>
+            <example>
+                <class>SoftUni_Tulev_Block</class>
+            </example>
+        </blocks>
+        <helpers>
+            <example>
+                <class>SoftUni_Tulev_Helper</class>
+            </example>
+        </helpers>
+    </global>
+</config>
