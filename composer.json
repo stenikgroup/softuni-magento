@@ -7,7 +7,9 @@
         }
     },
     "require": {
-        "magento-hackathon/magento-composer-installer": "3.0.*"
+        "magento-hackathon/magento-composer-installer": "3.0.*",
+        "connect20/clarion_onestepcheckout": "1.0.*",
+        "connect20/yotporeviews": "1.6.*"
     },
     "extra": {
         "magento-root-dir" : "./",
