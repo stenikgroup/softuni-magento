@@ -9,19 +9,46 @@
     </modules>
     <global>
         <models>
-            <example>
+            <softuni_tulev>
                 <class>SoftUni_Tulev_Model</class>
-            </example>
+                <resourceModel>softuni_tulev_resource</resourceModel>
+            </softuni_tulev>
+            <softuni_tulev_resource>
+                <class>SoftUni_Tulev_Model_Resource</class>
+                <entities>
+                    <submission>
+                        <table>softuni_tulev_submission</table>
+                    </submission>
+                </entities>
+            </softuni_tulev_resource>
         </models>
         <blocks>
-            <example>
+            <softuni_tulev>
                 <class>SoftUni_Tulev_Block</class>
-            </example>
+            </softuni_tulev>
         </blocks>
         <helpers>
-            <example>
+            <softuni_tulev>
                 <class>SoftUni_Tulev_Helper</class>
-            </example>
+            </softuni_tulev>
         </helpers>
+        <resources>
+            <softuni_tulev_setup>
+                <setup>
+                    <module>SoftUni_Tulev</module>
+                </setup>
+            </softuni_tulev_setup>
+        </resources>
     </global>
+    <frontend>
+        <routers>
+            <submission>
+                <use>standard</use>
+                <args>
+                    <frontName>submission</frontName>
+                    <module>SoftUni_Tulev</module>
+                </args>
+            </submission>
+        </routers>
+    </frontend>
 </config>
