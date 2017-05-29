@@ -1,3 +1,5 @@
-<form action="<?php echo $this->getUrl('softuni_submission/form/post') ?>" method="post">
-    <button>Submit</button>
+<form action="<?php echo $this->getActionUrl();  ?>" method="post">
+    <button>
+        <?php echo Mage::helper('softuni_submission')->__('Submit') ?>
+    </button>
 </form>

@@ -13,8 +13,8 @@ class SoftUni_Submission_FormController extends Mage_Core_Controller_Front_Actio
 //        $post = Mage::app()->getRequest()->getPost();
 
         $submission = Mage::getModel('softuni_submission/submission');
-        $submission->save(); // Not working - @todo - check why
-        die;
+        $submission->setFirstname('Soft');
+        $submission->save();
         $this->_redirectReferer();
     }
 }
