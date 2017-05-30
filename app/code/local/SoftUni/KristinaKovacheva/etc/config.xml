@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <SoftUni_KristinaKovacheva>
+            <version>1.0.0</version>
+        </SoftUni_KristinaKovacheva>
+    </modules>
+
+    <global>
+        <helpers>
+            <SoftUni_KristinaKovacheva>
+                <class>SoftUni_KristinaKovacheva_Helper</class>
+            </SoftUni_KristinaKovacheva>
+        </helpers>
+        <models>
+            <softuni_kristinakovacheva>
+                <class>SoftUni_KristinaKovacheva_Model</class>
+                <resourceModel>softuni_kristinakovacheva_resource</resourceModel>
+            </softuni_kristinakovacheva>
+            <softuni_kristinakovacheva_resource>
+                <class>SoftUni_KristinaKovacheva_Model_Resource</class>
+                <entities>
+                    <kristinakovacheva>
+                        <table>softuni_kristinakovacheva_kristinakovacheva</table>
+                    </kristinakovacheva>
+                </entities>
+            </softuni_kristinakovacheva_resource>
+        </models>
+        <resources>
+            <softuni_kristinakovacheva_setup>
+                <setup>
+                    <module>SoftUni_KristinaKovacheva</module>
+                </setup>
+            </softuni_kristinakovacheva_setup>
+        </resources>
+    </global>
+    <frontend>
+        <routers>
+            <SoftUni_KristinaKovacheva>
+                <use>standard</use>
+                <args>
+                    <module>SoftUni_KristinaKovacheva</module>
+                    <frontName>softuni_kristinakovacheva</frontName>
+                </args>
+            </SoftUni_KristinaKovacheva>
+        </routers>
+        <layout>
+            <updates>
+                <softuni_kristinakovacheva module="SoftUni_KristinaKovacheva">
+                    <file>softuni_kristinakovacheva.xml</file>
+                </softuni_kristinakovacheva>
+            </updates>
+        </layout>
+    </frontend>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <SoftUni_KristinaKovacheva>
+            <active>true</active>
+            <codePool>local</codePool>
+        </SoftUni_KristinaKovacheva>
+    </modules>
+</config>
