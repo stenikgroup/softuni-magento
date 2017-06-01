@@ -50,5 +50,12 @@
                 </args>
             </submission>
         </routers>
+        <layout>
+            <updates>
+                <submision module="SoftUni_Tulev">
+                    <file>submission.xml</file>
+                </submision>
+            </updates>
+        </layout>
     </frontend>
 </config>

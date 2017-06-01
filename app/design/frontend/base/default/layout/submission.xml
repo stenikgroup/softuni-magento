@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <submission_index_index>
+        <reference name="content">
+            <block type="core/template" name="submission.form" template="submission/form.phtml"/>
+        </reference>
+    </submission_index_index>
+</layout>
