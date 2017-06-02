@@ -8,6 +8,12 @@
 
     <global>
 
+        <blocks>
+            <softuni_ventsyslavvassilev>
+                <class>SoftUni_VentsyslavVassilev_Block</class>
+            </softuni_ventsyslavvassilev>
+        </blocks>
+
         <helpers>
             <softuni_ventsyslavvassilev>
                 <class>SoftUni_VentsyslavVassilev_Helper</class>
@@ -39,6 +45,15 @@
     </global>
 
     <frontend>
+        <translate>
+            <modules>
+                <SoftUni_VentsyslavVassilev>
+                    <files>
+                        <default>SoftUni_VentsyslavVassilev.csv</default>
+                    </files>
+                </SoftUni_VentsyslavVassilev>
+            </modules>
+        </translate>
         <routers>
             <softuni_ventsyslavvassilev>
                 <use>standard</use>
@@ -56,4 +71,40 @@
             </updates>
         </layout>
     </frontend>
+
+    <admin>
+
+        <routers>
+            <adminhtml>
+                <use>admin</use>
+                <args>
+                    <modules>
+                        <SoftUni_VentsyslavVassilev before="Mage_Adminhtml">SoftUni_VentsyslavVassilev</SoftUni_VentsyslavVassilev>
+                    </modules>
+
+                </args>
+            </adminhtml>
+        </routers>
+
+    </admin>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <SoftUni_VentsyslavVassilev>
+                    <files>
+                        <default>SoftUni_VentsyslavVassilev.csv</default>
+                    </files>
+                </SoftUni_VentsyslavVassilev>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <softuni_ventsyslavvassilev module="SoftUni_VentsyslavVassilev">
+                    <file>softuni_ventsyslavvassilev.xml</file>
+                </softuni_ventsyslavvassilev>
+            </updates>
+        </layout>
+    </adminhtml>>
+
 </config>

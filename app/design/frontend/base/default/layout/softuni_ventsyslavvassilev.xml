@@ -3,7 +3,7 @@
     <softuni_ventsyslavvassilev_form_enter>
 <!--        <remove name="root"/>-->
         <reference name="content">
-            <block type="core/template" name="softuni_ventsyslavvassilev.form" template="softuni/ventsyslavvassilev/form.phtml">
+            <block type="softuni_ventsyslavvassilev/form" name="softuni_ventsyslavvassilev.form" template="softuni/ventsyslavvassilev/form.phtml">
 
             </block>
         </reference>
