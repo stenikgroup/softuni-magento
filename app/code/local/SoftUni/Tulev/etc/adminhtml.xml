@@ -6,7 +6,7 @@
         <submission translate="title" module="softuni_tulev">
             <title>Submissions</title>
             <sort_order>1000</sort_order>
-            <action>adminhtml/tulev</action>
+            <action>adminhtml/submission</action>
         </submission>
     </menu>
 </config>
