@@ -21,6 +21,6 @@ class SoftUni_Tulev_IndexController extends Mage_Core_Controller_Front_Action {
 
         $submission->save();
 
-        $this->redirectReferer();
+        $this->_redirectReferer('submission/index/index');
     }
 }

@@ -19,9 +19,20 @@
                     <submission>
                         <table>softuni_tulev_submission</table>
                     </submission>
+                    <submission_registrant>
+                        <table>tulev_submission_registrant</table>
+                    </submission_registrant>
                 </entities>
             </softuni_tulev_resource>
         </models>
+        <resources>
+            <softuni_tulev_setup>
+                <setup>
+                    <module>SoftUni_Tulev</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </softuni_tulev_setup>
+        </resources>
         <blocks>
             <softuni_tulev>
                 <class>SoftUni_Tulev_Block</class>
@@ -32,14 +43,19 @@
                 <class>SoftUni_Tulev_Helper</class>
             </softuni_tulev>
         </helpers>
-        <resources>
-            <softuni_tulev_setup>
-                <setup>
-                    <module>SoftUni_Tulev</module>
-                </setup>
-            </softuni_tulev_setup>
-        </resources>
+
     </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <softuni_tulev before="Mage_Adminhtml">SoftUni_Tulev_Adminhtml</softuni_tulev>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
     <frontend>
         <routers>
             <submission>

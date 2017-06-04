@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE config>
+
+<config>
+    <menu>
+        <submission translate="title" module="softuni_tulev">
+            <title>Submissions</title>
+            <sort_order>1000</sort_order>
+            <action>adminhtml/tulev</action>
+        </submission>
+    </menu>
+</config>
+
+
+
+
+
+
+
+
+
+
