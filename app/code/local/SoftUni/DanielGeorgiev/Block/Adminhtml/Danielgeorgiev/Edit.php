@@ -10,8 +10,8 @@ class SoftUni_DanielGeorgiev_Block_Adminhtml_Danielgeorgiev_Edit extends Mage_Ad
 
         parent::__construct();
 
-        $this->_updateButton('save', 'label', Mage::helper('softuni_submission')->__('Save Submission'));
-        $this->_updateButton('delete', 'label', Mage::helper('softuni_submission')->__('Delete Submission'));
+        $this->_updateButton('save', 'label', Mage::helper('softuni_danielgeorgiev')->__('Save Submission'));
+        $this->_updateButton('delete', 'label', Mage::helper('softuni_danielgeorgiev')->__('Delete Submission'));
 
         $this->_addButton('saveandcontinue', array(
             'label'     => Mage::helper('adminhtml')->__('Save and Continue Edit'),
