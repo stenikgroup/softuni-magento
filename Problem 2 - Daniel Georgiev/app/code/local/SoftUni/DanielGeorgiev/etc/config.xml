@@ -12,13 +12,6 @@
                 <class>SoftUni_DanielGeorgiev_Helper</class>
             </softuni_danielgeorgiev>
         </helpers>
-
-        <blocks>
-            <softuni_danielgeorgiev>
-                <class>SoftUni_DanielGeorgiev_Block</class>
-            </softuni_danielgeorgiev>
-        </blocks>
-
         <models>
             <softuni_danielgeorgiev>
                 <class>SoftUni_DanielGeorgiev_Model</class>
@@ -44,15 +37,6 @@
     </global>
 
     <frontend>
-        <translate>
-            <modules>
-                <SoftUni_DanielGeorgiev>
-                    <files>
-                        <default>SoftUni_DanielGeorgiev.cvs</default>
-                    </files>
-                </SoftUni_DanielGeorgiev>
-            </modules>
-        </translate>
         <routers>
             <softuni_danielgeorgiev>
                 <use>standard</use>
@@ -70,35 +54,4 @@
             </updates>
         </layout>
     </frontend>
-
-    <admin>
-        <routers>
-            <adminhtml>
-                <args>
-                    <modules>
-                        <softuni_danielgeorgiev before="Mage_Adminhtml">SoftUni_DanielGeorgiev</softuni_danielgeorgiev>
-                    </modules>
-                </args>
-            </adminhtml>
-        </routers>
-    </admin>
-
-    <adminhtml>
-        <translate>
-            <modules>
-                <SoftUni_DanielGeorgiev>
-                    <files>
-                        <default>SoftUni_DanielGeorgiev.cvs</default>
-                    </files>
-                </SoftUni_DanielGeorgiev>
-            </modules>
-        </translate>
-        <layout>
-            <updates>
-                <softuni_danielgeorgiev module="softuni_danielgeorgiev">
-                    <file>softuni_danielgeorgiev.xml</file>
-                </softuni_danielgeorgiev>
-            </updates>
-        </layout>
-    </adminhtml>
 </config>
