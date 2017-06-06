@@ -2,7 +2,7 @@
 <layout version="0.1.0">
     <softuni_submission_form_index>
         <reference name="content">
-            <block type="core/template" name="softuni_submission.form" template="softuni/submission/form.phtml">
+            <block type="softuni_submission/form" name="softuni_submission.form" template="softuni/submission/form.phtml">
 
             </block>
         </reference>

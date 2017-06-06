@@ -13,6 +13,12 @@
             </softuni_submission>
         </helpers>
 
+        <blocks>
+            <softuni_submission>
+                <class>SoftUni_Submission_Block</class>
+            </softuni_submission>
+        </blocks>
+
         <models>
             <softuni_submission>
                 <class>SoftUni_Submission_Model</class>
@@ -38,6 +44,15 @@
     </global>
 
     <frontend>
+        <translate>
+            <modules>
+                <SoftUni_Submission>
+                    <files>
+                        <default>SoftUni_Submission.csv</default>
+                    </files>
+                </SoftUni_Submission>
+            </modules>
+        </translate>
         <routers>
             <softuni_submission>
                 <use>standard</use>
@@ -55,4 +70,34 @@
             </updates>
         </layout>
     </frontend>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <softuni_submission before="Mage_Adminhtml">SoftUni_Submission</softuni_submission>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <translate>
+            <modules>
+                <SoftUni_Submission>
+                    <files>
+                        <default>SoftUni_Submission.csv</default>
+                    </files>
+                </SoftUni_Submission>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <softuni_submission module="SoftUni_Submission">
+                    <file>softuni_submission.xml</file>
+                </softuni_submission>
+            </updates>
+        </layout>
+    </adminhtml>
 </config>

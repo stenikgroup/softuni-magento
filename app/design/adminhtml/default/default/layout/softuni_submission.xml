@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_softuni_submission_submission_index>
+        <reference name="content">
+            <block type="softuni_submission/adminhtml_submission" name="softuni_submission.submission"/>
+        </reference>
+    </adminhtml_softuni_submission_submission_index>
+
+    <adminhtml_softuni_submission_submission_new>
+        <update handle="adminhtml_softuni_submission_submission_edit"/>
+    </adminhtml_softuni_submission_submission_new>
+
+    <adminhtml_softuni_submission_submission_edit>
+        <reference name="content">
+            <block type="softuni_submission/adminhtml_submission_edit" name="softuni_submission.submission.edit"/>
+        </reference>
+    </adminhtml_softuni_submission_submission_edit>
+</layout>

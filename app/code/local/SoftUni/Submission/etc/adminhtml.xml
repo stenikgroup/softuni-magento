@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <softuni_submission translate="title" module="softuni_submission">
+            <title>Submission</title>
+            <sort_order>50</sort_order>
+            <action>adminhtml/softuni_submission_submission/index</action>
+        </softuni_submission>
+    </menu>
+
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <softuni_submission translate="title" module="softuni_submission">
+                        <title>Submission</title>
+                        <sort_order>50</sort_order>
+                    </softuni_submission>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
