@@ -1,4 +1,6 @@
 
+.idea/workspace.xml
+
 /downloader/.cache
 /downloader/*.cfg
 !/downloader/.htaccess
