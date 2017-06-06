@@ -72,4 +72,27 @@ class SoftUni_Tulev_Adminhtml_SubmissionController extends Mage_Adminhtml_Contro
 
         $this->_redirect('*/*/index');
     }
+
+    public function massDeleteAction()
+    {
+        if ($submissionIds = $this->getRequest()->getParam('submission_ids')) {
+           try {
+               foreach ($submissionIds as $submissionId) {
+                   $model = Mage::getModel('softuni_tulev/submission')->load($submissionId);
+                   $model->delete();
+               }
+               Mage::getSingleton('adminhtml/session')->addSuccess(
+                   $this->__("%d submission(s) deleted successfully", count($submissionIds)
+               ));
+           } catch (Exception $e) {
+               Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
+           }
+        } else {
+            Mage::getSingleton('adminhtml/session')->addError(
+                $this->__('You must select a submission(s) to delete.')
+            );
+        }
+
+        $this->_redirect('*/*/index');
+    }
 }

@@ -31,6 +31,20 @@ class SoftUni_Tulev_Block_Adminhtml_Submission_Grid extends Mage_Adminhtml_Block
         return $this;
     }
 
+    protected function _prepareMassaction()
+    {
+        $this->setMassactionIdField('submission_id');
+        $this->getMassactionBlock()->setFormFieldName('submission_ids');
+
+        $this->getMassactionBlock()->addItem('delete_submission', array(
+            'label' => Mage::helper('softuni_tulev')->__('Delete'),
+            'url' => $this->getUrl('*/*/massDelete'),
+            'confirm' => Mage::helper('softuni_tulev')->__('Are you sure?')
+        ));
+
+        return $this;
+    }
+
 }
 
 
