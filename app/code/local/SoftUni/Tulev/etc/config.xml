@@ -56,6 +56,15 @@
         </routers>
     </admin>
     <frontend>
+        <translate>
+            <modules>
+                <SoftUni_Tulev>
+                    <files>
+                        <default>SoftUni_Tulev.csv</default>
+                    </files>
+                </SoftUni_Tulev>
+            </modules>
+        </translate>
         <routers>
             <submission>
                 <use>standard</use>

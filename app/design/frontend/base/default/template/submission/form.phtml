@@ -25,29 +25,29 @@
  */
 ?>
 <div class="page-title">
-    <h1><?php echo Mage::helper('contacts')->__('Project\'s Submission Form') ?></h1>
+    <h1><?php echo Mage::helper('softuni_tulev')->__('Project\'s Submission Form') ?></h1>
 </div>
 <form action="<?php echo $this->getUrl('submission/index/post'); ?>" id="submissionForm" method="post">
     <div class="fieldset">
         <ul class="form-list">
             <li class="fields">
                 <div class="field">
-                    <label for="name" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Name') ?></label>
+                    <label for="name" class="required"><em>*</em><?php echo Mage::helper('softuni_tulev')->__('Name') ?></label>
                     <div class="input-box">
-                        <input name="name" id="name" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Name')) ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserName()) ?>" class="input-text required-entry" type="text" />
+                        <input name="name" id="name" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('softuni_tulev')->__('Name')) ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserName()) ?>" class="input-text required-entry" type="text" />
                     </div>
                 </div>
                 <div class="field">
-                    <label for="email" class="required"><em>*</em><?php echo Mage::helper('contacts')->__('Email') ?></label>
+                    <label for="email" class="required"><em>*</em><?php echo Mage::helper('softuni_tulev')->__('Email') ?></label>
                     <div class="input-box">
-                        <input name="email" id="email" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Email')) ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserEmail()) ?>" class="input-text required-entry validate-email" type="text" />
+                        <input name="email" id="email" title="<?php echo Mage::helper('softuni_tulev')->quoteEscape(Mage::helper('softuni_tulev')->__('Email')) ?>" value="<?php echo $this->escapeHtml($this->helper('contacts')->getUserEmail()) ?>" class="input-text required-entry validate-email" type="text" />
                     </div>
                 </div>
             </li>
             <li>
-                <label for="telephone"><?php echo Mage::helper('contacts')->__('Phone') ?></label>
+                <label for="telephone"><?php echo Mage::helper('softuni_tulev')->__('Phone') ?></label>
                 <div class="input-box">
-                    <input name="phone" id="phone" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('contacts')->__('Telephone')) ?>" value="" class="input-text" type="text" />
+                    <input name="phone" id="phone" title="<?php echo Mage::helper('core')->quoteEscape(Mage::helper('softuni_tulev')->__('Telephone')) ?>" value="" class="input-text" type="text" />
                 </div>
             </li>
             <li>
