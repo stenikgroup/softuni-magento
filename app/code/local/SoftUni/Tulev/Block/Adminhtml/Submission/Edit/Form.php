@@ -28,4 +28,19 @@ class SoftUni_Tulev_Block_Adminhtml_Submission_Edit_Form extends
 
         return parent::_prepareForm();
     }
+
+    protected function _initFormValues()
+    {
+        // editing an existing submission!
+        if ($submission = Mage::registry('current_submission')) {
+            $data = $submission->getData();
+            //Manipulate the $data
+            $this->getForm()->setValues($data);
+        }
+
+        // Keep post data upon a failed save action
+        if ($data = Mage::getSingleton('adminhtml/session')->getData('submission_form_data', true)) {
+            $this->getForm()->setValues($data);
+        }
+    }
 }

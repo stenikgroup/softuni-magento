@@ -19,6 +19,6 @@ class SoftUni_Tulev_Block_Adminhtml_Submission_Edit extends Mage_Adminhtml_Block
 
     public function getSaveUrl()
     {
-        return $this->getUrl('*/submission/save');
+        return $this->getUrl('*/submission/save', array('_current' => true));
     }
 }

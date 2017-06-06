@@ -1,15 +1,13 @@
 <?php
 
-class SoftUni_Submission_Block_Adminhtml_Submission extends Mage_Adminhtml_Block_Widget_Grid_Container
+class SoftUni_Tulev_Block_Adminhtml_Submission extends Mage_Adminhtml_Block_Widget_Grid_Container
 {
     public  function __construct()
     {
-        var_dump("opa");
-        die();
-        $this->_blockGroup = 'submission';
-        $this->controller = 'adminhtml_submission';
-        $this->_headerText = Mage::helper('submission')->__('Submissions');
-        $this->_addButtonLabel = Mage::helper('submission')->__('Add New Submission');
+        $this->_blockGroup = 'softuni_tulev';
+        $this->_controller = 'adminhtml_submission';
+        $this->_headerText = Mage::helper('softuni_tulev')->__('Submissions');
+        $this->_addButtonLabel = Mage::helper('softuni_tulev')->__('Add New Submission');
 
         parent::__construct();
     }

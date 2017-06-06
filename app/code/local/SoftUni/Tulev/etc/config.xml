@@ -43,7 +43,6 @@
                 <class>SoftUni_Tulev_Helper</class>
             </softuni_tulev>
         </helpers>
-
     </global>
     <admin>
         <routers>
