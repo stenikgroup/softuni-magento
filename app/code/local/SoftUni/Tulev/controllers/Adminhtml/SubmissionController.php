@@ -95,4 +95,18 @@ class SoftUni_Tulev_Adminhtml_SubmissionController extends Mage_Adminhtml_Contro
 
         $this->_redirect('*/*/index');
     }
+
+    public function exportCsvAction()
+    {
+        $fileName = 'submission.csv';
+        $grid     = $this->getLayout()->createBlock('softuni_tulev/adminhtml_submission_grid');
+        $this->_prepareDownloadResponse($fileName, $grid->getCsvFile());
+    }
+
+    public function exportExcelAction()
+    {
+        $fileName = 'submission.xlsx';
+        $grid     = $this->getLayout()->createBlock('softuni_tulev/adminhtml_submission_grid');
+        $this->_prepareDownloadResponse($fileName, $grid->getExcelFile($fileName));
+    }
 }

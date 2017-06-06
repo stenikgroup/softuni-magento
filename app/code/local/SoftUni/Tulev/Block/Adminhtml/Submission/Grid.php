@@ -28,6 +28,9 @@ class SoftUni_Tulev_Block_Adminhtml_Submission_Grid extends Mage_Adminhtml_Block
             'header' => $this->__('Email')
         ));
 
+        $this->addExportType('*/*/exportCsv', Mage::helper('softuni_tulev')->__('CSV'));
+        $this->addExportType('*/*/exportExcel', Mage::helper('softuni_tulev')->__('Excel XML'));
+
         return $this;
     }
 
