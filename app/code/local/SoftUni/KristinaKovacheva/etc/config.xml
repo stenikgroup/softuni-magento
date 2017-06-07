@@ -5,13 +5,51 @@
             <version>1.0.0</version>
         </SoftUni_KristinaKovacheva>
     </modules>
-
+    <!--here we write only the translation tag, all other tags are in separate adminhtml.xml file-->
+    <adminhtml>
+        <translate>
+            <modules>
+                <SoftUni_KristinaKovacheva>
+                    <files>
+                        <default>SoftUni_KristinaKovacheva.csv</default>
+                    </files>
+                </SoftUni_KristinaKovacheva>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <softuni_kristinakovacheva module="SoftUni_KristinaKovacheva">
+                    <file>softuni_kristinakovacheva.xml</file>
+                </softuni_kristinakovacheva>
+            </updates>
+        </layout>
+    </adminhtml>
+    <!--for routers it always need to be in tag admin, not adminhtml-->
+    <!--here we define that our controllers exist-->
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <!--here we rewrite magento controller so that our controller comes before theirs-->
+                    <modules>
+                        <softuni_kristinakovacheva before="Mage_Adminhtml">SoftUni_KristinaKovacheva</softuni_kristinakovacheva>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
     <global>
         <helpers>
             <SoftUni_KristinaKovacheva>
                 <class>SoftUni_KristinaKovacheva_Helper</class>
             </SoftUni_KristinaKovacheva>
         </helpers>
+        <blocks>
+            <!--if with capital letters doesn't work-->
+            <softuni_kristinakovacheva>
+                <class>SoftUni_KristinaKovacheva_Block</class>
+            </softuni_kristinakovacheva>
+        </blocks>
         <models>
             <softuni_kristinakovacheva>
                 <class>SoftUni_KristinaKovacheva_Model</class>
@@ -44,6 +82,15 @@
                 </args>
             </SoftUni_KristinaKovacheva>
         </routers>
+        <translate>
+            <modules>
+                <SoftUni_KristinaKovacheva>
+                    <files>
+                        <default>SoftUni_KristinaKovacheva.csv</default>
+                    </files>
+                </SoftUni_KristinaKovacheva>
+            </modules>
+        </translate>
         <layout>
             <updates>
                 <softuni_kristinakovacheva module="SoftUni_KristinaKovacheva">

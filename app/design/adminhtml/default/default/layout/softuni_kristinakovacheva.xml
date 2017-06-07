@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_softuni_kristinakovacheva_kristinakovacheva_index>
+        <reference name="content">
+            <block type="softuni_kristinakovacheva/adminhtml_kristinakovacheva" name="softuni_kristinakovacheva.kristinakovacheva"/>
+        </reference>
+    </adminhtml_softuni_kristinakovacheva_kristinakovacheva_index>
+    <adminhtml_softuni_kristinakovacheva_kristinakovacheva_new>
+        <update handle="adminhtml_softuni_kristinakovacheva_kristinakovacheva_edit"/>
+    </adminhtml_softuni_kristinakovacheva_kristinakovacheva_new>
+    <adminhtml_softuni_kristinakovacheva_kristinakovacheva_edit>
+        <reference name="content">
+            <block type="softuni_kristinakovacheva/adminhtml_kristinakovacheva_edit" name="softuni_kristinakovacheva.kristinakovacheva.edit" />
+        </reference>
+    </adminhtml_softuni_kristinakovacheva_kristinakovacheva_edit>
+</layout>

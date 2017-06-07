@@ -17,6 +17,10 @@ class SoftUni_KristinaKovacheva_FormController extends Mage_Core_Controller_Fron
             $submission->$command($value);
         }
         $submission->save();
+//        add flash message
+        Mage::getSingleton('core/session')->addSuccess(
+            Mage::helper('SoftUni_KristinaKovacheva')->__('You just entered new submission!')
+        );
 //        die();
         $this->_redirectReferer();
     }
