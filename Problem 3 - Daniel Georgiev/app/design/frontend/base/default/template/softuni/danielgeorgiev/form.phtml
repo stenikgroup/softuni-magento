@@ -1,0 +1,32 @@
+<form action="<?php echo $this->getActionUrl(); ?>" method="post">
+
+    <div class="dg-submission-field-row">
+        <label for="dg-submission-name">Name</label>
+        <br />
+        <input type="text" id="dg-submission-name" name="dg-submission-name" class="input-text">
+    </div>
+    <br />
+
+    <div class="dg-submission-field-row">
+        <label for="dg-submission-age">Age</label>
+        <br />
+        <input type="text" id="dg-submission-age" name="dg-submission-age" class="input-text">
+    </div>
+    <br />
+
+    <div class="dg-submission-field-row">
+        <label for="dg-submission-telephone">Telephone</label>
+        <br />
+        <input type="text" id="dg-submission-telephone" name="dg-submission-telephone" class="input-text">
+    </div>
+    <br />
+
+    <div class="dg-submission-field-row">
+        <label for="dg-submission-email">Email</label>
+        <br />
+        <input type="text" id="dg-submission-email" name="dg-submission-email" class="input-text">
+    </div>
+    <br />
+
+    <button><?php echo Mage::helper('softuni_danielgeorgiev')->__('Submit'); ?></button>
+</form>
