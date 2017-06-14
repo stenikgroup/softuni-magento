@@ -10601,3 +10601,23 @@ div.calendar table td.button {
   color: inherit;
   text-transform: none;
 }
+
+/* -------------------------------------------- *
+ * DK: Additional styling
+ */
+/*Best seller products title on the home page */
+#bestseller-home-heading {
+    text-align: center;
+}
+#bestseller-home-heading h1 {
+    font-weight: 400;
+    margin-top: 35px;
+}
+
+.products-grid .product-image-bestseller-home,
+.product-image-featured-home {
+    width: 75%;
+    margin-bottom: 15px;
+    margin-left: 10%;
+}
+

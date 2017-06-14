@@ -348,3 +348,10 @@ body .promos > li {
   font: italic 18px/28px Georgia, "Times New Roman", Times, serif;
   color: #656565;
 }
+
+#featured-subtitle {
+    font-weight: 400;
+    line-height: 1.2;
+    border: none;
+    color: #636363;
+}
