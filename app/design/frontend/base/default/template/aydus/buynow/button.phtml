@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * BuyNow button
+ * 
+ * @category   Aydus
+ * @package    Aydus_BuyNow
+ * @author     Aydus Consulting <davidt@aydus.com>
+ */
+?>
+
+<button type="button" title="Buy Now" id="buynow-button" class="" onclick="">
+    <span><span>Buy Now</span></span>
+</button>
+
+<script>
+    
+    var buyNowOptions = {
+        loggedIn : <?php echo (Mage::getSingleton('customer/session')->isLoggedIn()) ? 'true' : 'false' ?>,
+        registerUrl : '<?php echo $this->getUrl('customer/account/create') ?>',
+        registerLabel : '<?php echo $this->helper('customer')->__('Register') ?>',
+        loginLabel : '<?php echo $this->helper('customer')->__('Login') ?>',
+        checkoutLabel : '<?php echo $this->helper('checkout')->__('Checkout') ?>',
+        onepageUrl : '<?php echo $this->getUrl('checkout/onepage') ?>',
+        addToCartUrl : '<?php echo $this->getUrl('buynow/index/addtocart') ?>',
+        changeBillingAddressUrl : '<?php echo $this->getUrl('buynow/index/changebillingaddress') ?>',
+        shippingMethodsUrl : '<?php echo $this->getUrl('buynow/index/shippingmethods') ?>',
+        changeShippingMethodUrl : '<?php echo $this->getUrl('buynow/index/changeshippingmethod') ?>',
+        progressBackground : "background: white url(<?php echo $this->getSkinUrl('aydus/buynow/buynow-progress.gif') ?>) no-repeat center center;"
+    };
+
+    new Event.observe("buynow-checkout-form", "submit", function(e){
+	    e.stop();
+	    });        
+
+</script>
