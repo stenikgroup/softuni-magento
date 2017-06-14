@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SoftUni_CheapCheckout>
+            <version>1.0.0</version>
+        </SoftUni_CheapCheckout>
+    </modules>
+
+    <global>
+        <helpers>
+            <softuni_cheapcheckout>
+                <class>SoftUni_CheapCheckout_Helper</class>
+            </softuni_cheapcheckout>
+        </helpers>
+
+        <blocks>
+            <softuni_cheapcheckout>
+                <class>SoftUni_CheapCheckout_Block</class>
+            </softuni_cheapcheckout>
+        </blocks>
+
+        <models>
+            <softuni_cheapcheckout>
+                <class>SoftUni_CheapCheckout_Model</class>
+            </softuni_cheapcheckout>
+        </models>
+    </global>
+
+    <default>
+        <carriers>
+            <softuni_cheapcheckout_cheaprate>
+                <active>0</active>
+                <sallowspecific>0</sallowspecific>
+                <model>softuni_cheapcheckout/carrier_cheaprate</model>
+                <name>Cheap Method</name>
+                <price>5.00</price>
+                <title>Cheap Carrier</title>
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+                <handling_type>F</handling_type>
+            </softuni_cheapcheckout_cheaprate>
+        </carriers>
+
+        <payment>
+            <softuni_cheapcheckout_cheap>
+                <active>0</active>
+                <model>softuni_cheapcheckout/method_cheap</model>
+                <order_status>pending</order_status>
+                <title>Cheap Method</title>
+                <allowspecific>0</allowspecific>
+                <group>offline</group>
+            </softuni_cheapcheckout_cheap>
+        </payment>
+    </default>
+</config>

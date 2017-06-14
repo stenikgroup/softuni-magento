@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<widgets>
+    <softuni_cheapcheckout_products type="softuni_cheapcheckout/widget_product_list" translate="name description" module="softuni_cheapcheckout">
+        <name>CheapCheckout Products</name>
+        <description>Products</description>
+        <parameters>
+            <title translate="label">
+                <label>Title</label>
+                <visible>1</visible>
+                <type>text</type>
+                <sort_order>10</sort_order>
+            </title>
+            <template translate="label">
+                <label>Template</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>softuni/cheapcheckout/widget/product/list.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>softuni/cheapcheckout/widget/product/list.phtml</value>
+                        <label>Default</label>
+                    </default>
+                </values>
+                <sort_order>100</sort_order>
+            </template>
+        </parameters>
+    </softuni_cheapcheckout_products>
+</widgets>
