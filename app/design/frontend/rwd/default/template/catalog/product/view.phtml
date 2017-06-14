@@ -36,6 +36,7 @@
 <script type="text/javascript">
     var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
 </script>
+<p>Test editing templates</p>
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
 <div class="product-view">
     <div class="product-essential">
@@ -48,7 +49,7 @@
 
             <div class="product-img-box">
                 <div class="product-name">
-                    <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+                    <h5><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h5>
                 </div>
                 <?php echo $this->getChildHtml('media') ?>
             </div>
