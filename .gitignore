@@ -1,3 +1,4 @@
+.idea/**/*
 /.htaccess
 /app/etc/local.xml
 
