@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<layout>
+    <catalog_product_view>
+        <reference name="product.info.additional">
+            <block type="naya_facebookcomments/facebookcomments" name="naya.facebook.comments" as="naya_facebook_comments" before="-" template="naya/facebookcomments/facebookcomments.phtml" />
+        </reference>
+    </catalog_product_view>
+</layout>

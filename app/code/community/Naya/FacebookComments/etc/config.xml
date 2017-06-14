@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Naya_FacebookComments>
+            <version>1.0.0</version>
+        </Naya_FacebookComments>
+    </modules>
+    
+    <global>
+        <models>
+            <naya_facebookcomments>
+                <class>Naya_FacebookComments_Model</class>
+            </naya_facebookcomments>
+        </models>
+        <blocks>
+            <naya_facebookcomments>
+                <class>Naya_FacebookComments_Block</class>
+            </naya_facebookcomments>
+        </blocks>
+        <helpers>
+            <naya_facebookcomments>
+                <class>Naya_FacebookComments_Helper</class>
+            </naya_facebookcomments>
+        </helpers>
+    </global>
+    
+    <adminhtml>
+        <translate>
+            <modules>
+                <Naya_FacebookComments>
+                    <files>
+                        <default>Naya_FacebookComments.csv</default>
+                    </files>
+                </Naya_FacebookComments>
+            </modules>
+        </translate>
+    </adminhtml>
+    
+    <frontend>
+        <layout>
+            <updates>
+                <naya_facebookcomments>
+                    <file>naya_facebookcomments.xml</file>
+                </naya_facebookcomments>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Naya_FacebookComments>
+                    <files>
+                        <default>Naya_FacebookComments.csv</default>
+                    </files>
+                </Naya_FacebookComments>
+            </modules>
+        </translate>
+    </frontend>
+    
+     <default>
+        <naya_facebookcomments>
+            <general>
+                <language>en_US</language>
+                <num_post>5</num_post>
+            </general>
+        </naya_facebookcomments>
+    </default>
+</config>

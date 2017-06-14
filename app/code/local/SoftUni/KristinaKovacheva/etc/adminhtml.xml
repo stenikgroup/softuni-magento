@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<config>
+    <menu>
+        <!--when module=""  is with lowercase letters it doesn't work!!! -->
+        <softuni_kristinakovacheva translate="title" module="SoftUni_KristinaKovacheva">
+            <title>KristinaKovacheva</title>
+            <sort_order>70</sort_order>
+            <action>adminhtml/softuni_kristinakovacheva_kristinakovacheva/index</action>
+        </softuni_kristinakovacheva>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <softuni_kristinakovacheva translate="title" module="SoftUni_KristinaKovacheva">
+                        <title>KristinaKovacheva</title>
+                        <sort_order>70</sort_order>
+                    </softuni_kristinakovacheva>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

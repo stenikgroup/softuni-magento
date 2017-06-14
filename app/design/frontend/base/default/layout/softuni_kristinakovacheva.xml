@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <softuni_kristinakovacheva_form_index>
+        <reference name="content">
+            <block type="softuni_kristinakovacheva/form" name="softuni_kristinakovacheva.form" template="softuni/kristinakovacheva/form.phtml">
+
+            </block>
+        </reference>
+    </softuni_kristinakovacheva_form_index>
+</layout>

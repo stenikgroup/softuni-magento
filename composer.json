@@ -4,10 +4,18 @@
         "firegento": {
             "type": "composer",
             "url": "https://packages.firegento.com"
+        },
+        "inchoo":{
+            "type": "vcs",
+            "url": "https://github.com/Marko-M/Inchoo_SocialConnect.git"
         }
     },
     "require": {
-        "magento-hackathon/magento-composer-installer": "3.0.*"
+        "magento-hackathon/magento-composer-installer": "3.0.*",
+        "aoepeople/aoe_templatehints": "*",
+        "connect20/naya_facebookcomments": "*",
+        "marko-m/inchoo_socialconnect": "*",
+        "connect20/creativestyle_amazonpayments": "*"
     },
     "extra": {
         "magento-root-dir" : "./",
