@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <softuni_danielgeorgiev_form_submission>
+        <reference name="content">
+            <block type="core/template" name="danielgeorgiev_submission.form" template="softuni/danielgeorgiev/form.phtml">
+
+            </block>
+        </reference>
+    </softuni_danielgeorgiev_form_submission>
+</layout>

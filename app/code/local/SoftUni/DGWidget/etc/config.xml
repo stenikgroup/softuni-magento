@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SoftUni_DGWidget>
+            <version>1.0.0</version>
+        </SoftUni_DGWidget>
+    </modules>
+
+    <global>
+        <helpers>
+            <softuni_dgwidget>
+                <class>SoftUni_DGWidget_Helper</class>
+            </softuni_dgwidget>
+        </helpers>
+        <blocks>
+            <softuni_dgwidget>
+                <class>SoftUni_DGWidget_Block</class>
+            </softuni_dgwidget>
+        </blocks>
+        <models>
+            <softuni_dgwidget>
+                <class>SoftUni_DGWidget_Model</class>
+            </softuni_dgwidget>
+        </models>
+    </global>
+
+    <default>
+        <carriers>
+            <softuni_dgwidget_lowrate>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+                <model>softuni_dgwidget/carrier_lowrate</model>
+                <name>Low Method</name>
+                <price>5.00</price>
+                <title>Low Rate</title>
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+                <handling_type>F</handling_type>
+            </softuni_dgwidget_lowrate>
+        </carriers>
+        <payment>
+            <softuni_dgwidget_cheap>
+                <active>1</active>
+                <model>softuni_dgwidget/method_cheap</model>
+                <order_status>pending</order_status>
+                <title>Cheap Delivery</title>
+                <allowspecific>0</allowspecific>
+                <group>offline</group>
+            </softuni_dgwidget_cheap>
+        </payment>
+    </default>
+
+
+</config>

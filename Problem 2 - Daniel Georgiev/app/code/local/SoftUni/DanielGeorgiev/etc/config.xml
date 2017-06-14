@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SoftUni_DanielGeorgiev>
+            <version>1.0.0</version>
+        </SoftUni_DanielGeorgiev>
+    </modules>
+
+    <global>
+        <helpers>
+            <softuni_danielgeorgiev>
+                <class>SoftUni_DanielGeorgiev_Helper</class>
+            </softuni_danielgeorgiev>
+        </helpers>
+        <models>
+            <softuni_danielgeorgiev>
+                <class>SoftUni_DanielGeorgiev_Model</class>
+                <resourceModel>softuni_danielgeorgiev_resource</resourceModel>
+            </softuni_danielgeorgiev>
+            <softuni_danielgeorgiev_resource>
+                <class>SoftUni_DanielGeorgiev_Model_Resource</class>
+                <entities>
+                    <submission>
+                        <table>softuni_danielgeorgiev_submission</table>
+                    </submission>
+                </entities>
+            </softuni_danielgeorgiev_resource>
+        </models>
+
+        <resources>
+            <softuni_danielgeorgiev_setup>
+                <setup>
+                    <module>SoftUni_DanielGeorgiev</module>
+                </setup>
+            </softuni_danielgeorgiev_setup>
+        </resources>
+    </global>
+
+    <frontend>
+        <routers>
+            <softuni_danielgeorgiev>
+                <use>standard</use>
+                <args>
+                    <module>SoftUni_DanielGeorgiev</module>
+                    <frontName>danielgeorgiev</frontName>
+                </args>
+            </softuni_danielgeorgiev>
+        </routers>
+        <layout>
+            <updates>
+                <softuni_danielgeorgiev module="SoftUni_DanielGeorgiev">
+                    <file>softuni_danielgeorgiev.xml</file>
+                </softuni_danielgeorgiev>
+            </updates>
+        </layout>
+    </frontend>
+</config>

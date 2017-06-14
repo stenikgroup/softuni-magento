@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<widgets>
+    <softuni_dgwidget_slider type="softuni_dgwidget/slider" translate="name description"
+                             module="softuni_dgwidget">
+        <name>Daniel Georgiev Widget</name>
+        <description>Slider</description>
+        <parameters>
+            <title translate="label">
+                <label>Title</label>
+                <visible>1</visible>
+                <type>text</type>
+                <sort_order>10</sort_order>
+            </title>
+            <template translate="label">
+                <label>Slider</label>
+                <visible>1</visible>
+                <type>select</type>
+                <value>softuni/dgwidget/slider.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>softuni/dgwidget/slider.phtml</value>
+                        <label>Default</label>
+                    </default>
+                </values>
+                <sort_order>100</sort_order>
+            </template>
+        </parameters>
+    </softuni_dgwidget_slider>
+</widgets>

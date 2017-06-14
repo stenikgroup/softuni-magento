@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<config>
+    <menu>
+        <softuni_danielgeorgiev translate="title" module="softuni_danielgeorgiev">
+            <title>Daniel Georgiev</title>
+            <sort_order>50</sort_order>
+            <action>adminhtml/softuni_danielgeorgiev_submission/</action>
+        </softuni_danielgeorgiev>
+    </menu>
+
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <softuni_danielgeorgiev translate="title" module="softuni_danielgeorgiev">
+                        <title>Daniel Georgiev</title>
+                        <sort_order>50</sort_order>
+                    </softuni_danielgeorgiev>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

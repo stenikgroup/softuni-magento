@@ -51,6 +51,9 @@
                     <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
                 </div>
                 <?php echo $this->getChildHtml('media') ?>
+                <div class="product-rating">
+                    <?php $this->helper('yotpo')->showWidget($this, $_product); ?>
+                </div>
             </div>
 
             <div class="product-shop">

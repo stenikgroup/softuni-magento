@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<layout>
+    <adminhtml_softuni_danielgeorgiev_submission_index>
+        <reference name="content">
+            <block type="softuni_danielgeorgiev/adminhtml_danielgeorgiev" name="softuni_danielgeorgiev.submission" />
+        </reference>
+    </adminhtml_softuni_danielgeorgiev_submission_index>
+
+    <adminhtml_softuni_danielgeorgiev_submission_new>
+        <update handle="adminhtml_danielgeorgiev_submission_edit" />
+    </adminhtml_softuni_danielgeorgiev_submission_new>
+
+    <adminhtml_softuni_danielgeorgiev_submission_edit>
+        <reference name="content">
+            <block type="softuni_danielgeorgiev/adminhtml_danielgeorgiev_edit" name="softuni_danielgeorgiev.submission.edit"/>
+        </reference>
+    </adminhtml_softuni_danielgeorgiev_submission_edit>
+</layout>
