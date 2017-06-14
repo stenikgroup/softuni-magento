@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <stumbata_submission_form_index>
+        <reference name="content">
+            <block type="core/template" name="stumbata_submission.form" template="stumbata/submission/form.phtml">
+
+            </block>
+        </reference>
+    </stumbata_submission_form_index>
+</layout>

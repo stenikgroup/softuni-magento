@@ -22,3 +22,6 @@
 /sitemap.xml
 
 /vendor/*
+
+.DS_Store
+.idea/

@@ -1,0 +1,44 @@
+version: "2"
+
+services:
+  web:
+    image: meanbee/magento:5.6-apache
+    hostname: magento-dev.docker
+    ports:
+      - "80:80"
+    volumes_from:
+      - appdata
+    environment:
+      - VIRTUAL_HOST=magento-dev.docker
+      - VIRTUAL_PORT=80
+      - HTTPS_METHOD=noredirect
+      - ENABLE_SENDMAIL=true
+    links:
+      - db
+
+  cron:
+    image: meanbee/magento:5.6-cli
+    hostname: cron.magento-dev.docker
+    working_dir: /var/www/html
+    command: /run-cron.sh
+    volumes_from:
+      - appdata
+    environment:
+      - ENABLE_SENDMAIL=true
+    links:
+      - db
+
+  db:
+    image: meanbee/magento-mysql
+    ports:
+      - 32768:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=toor
+      - MYSQL_USER=magento
+      - MYSQL_PASSWORD=magento
+      - MYSQL_DATABASE=magento
+
+  appdata:
+    image: tianon/true
+    volumes:
+      - .:/var/www/html
