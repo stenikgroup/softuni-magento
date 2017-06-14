@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_softuni_ventsyslavvassilev_ventsyslavvassilev_index>
+        <reference name="content">
+            <block type="softuni_ventsyslavvassilev/adminhtml_ventsyslavvassilev" name="softuni_ventsyslavvassilev.ventsyslavvassilev"/>
+        </reference>
+    </adminhtml_softuni_ventsyslavvassilev_ventsyslavvassilev_index>
+
+    <adminhtml_softuni_ventsyslavvassilev_ventsyslavvassilev_new>
+        <update handle="adminhtml_softuni_ventsyslavvassilev_ventsyslavvassilev_edit"/>
+    </adminhtml_softuni_ventsyslavvassilev_ventsyslavvassilev_new>
+
+    <adminhtml_softuni_ventsyslavvassilev_ventsyslavvassilev_edit>
+        <reference name="content">
+            <block type="softuni_ventsyslavvassilev/adminhtml_ventsyslavvassilev_edit" name="softuni_ventsyslavvassilev.ventsyslavvassilev.edit"/>
+        </reference>
+    </adminhtml_softuni_ventsyslavvassilev_ventsyslavvassilev_edit>
+</layout>

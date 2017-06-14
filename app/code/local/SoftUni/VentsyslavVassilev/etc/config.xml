@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SoftUni_VentsyslavVassilev>
+            <version>1.0.0</version>
+        </SoftUni_VentsyslavVassilev>
+    </modules>
+
+    <global>
+
+        <blocks>
+            <softuni_ventsyslavvassilev>
+                <class>SoftUni_VentsyslavVassilev_Block</class>
+            </softuni_ventsyslavvassilev>
+        </blocks>
+
+        <helpers>
+            <softuni_ventsyslavvassilev>
+                <class>SoftUni_VentsyslavVassilev_Helper</class>
+            </softuni_ventsyslavvassilev>
+        </helpers>
+
+        <models>
+            <softuni_ventsyslavvassilev>
+                <class>SoftUni_VentsyslavVassilev_Model</class>
+                <resourceModel>softuni_ventsyslavvassilev_resource</resourceModel>
+            </softuni_ventsyslavvassilev>
+            <softuni_ventsyslavvassilev_resource>
+                <class>SoftUni_VentsyslavVassilev_Model_Resource</class>
+                <entities>
+                    <ventsyslavvassilev>
+                        <table>softuni_ventsyslavvassilev_item</table>
+                    </ventsyslavvassilev>
+                </entities>
+            </softuni_ventsyslavvassilev_resource>
+        </models>
+
+        <resources>
+            <softuni_ventsyslavvassilev_setup>
+                <setup>
+                    <module>SoftUni_VentsyslavVassilev</module>
+                </setup>
+            </softuni_ventsyslavvassilev_setup>
+        </resources>
+    </global>
+
+    <frontend>
+        <translate>
+            <modules>
+                <SoftUni_VentsyslavVassilev>
+                    <files>
+                        <default>SoftUni_VentsyslavVassilev.csv</default>
+                    </files>
+                </SoftUni_VentsyslavVassilev>
+            </modules>
+        </translate>
+        <routers>
+            <softuni_ventsyslavvassilev>
+                <use>standard</use>
+                <args>
+                    <module>SoftUni_VentsyslavVassilev</module>
+                    <frontName>softuni_ventsyslavvassilev</frontName>
+                </args>
+            </softuni_ventsyslavvassilev>
+        </routers>
+        <layout>
+            <updates>
+                <softuni_ventsyslavvassilev module="SoftUni_VentsyslavVassilev">
+                    <file>softuni_ventsyslavvassilev.xml</file>
+                </softuni_ventsyslavvassilev>
+            </updates>
+        </layout>
+    </frontend>
+
+    <admin>
+
+        <routers>
+            <adminhtml>
+                <use>admin</use>
+                <args>
+                    <modules>
+                        <SoftUni_VentsyslavVassilev before="Mage_Adminhtml">SoftUni_VentsyslavVassilev</SoftUni_VentsyslavVassilev>
+                    </modules>
+
+                </args>
+            </adminhtml>
+        </routers>
+
+    </admin>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <SoftUni_VentsyslavVassilev>
+                    <files>
+                        <default>SoftUni_VentsyslavVassilev.csv</default>
+                    </files>
+                </SoftUni_VentsyslavVassilev>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <softuni_ventsyslavvassilev module="SoftUni_VentsyslavVassilev">
+                    <file>softuni_ventsyslavvassilev.xml</file>
+                </softuni_ventsyslavvassilev>
+            </updates>
+        </layout>
+    </adminhtml>>
+
+</config>

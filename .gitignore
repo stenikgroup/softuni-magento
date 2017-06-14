@@ -1,5 +1,5 @@
-/.htaccess
-/app/etc/local.xml
+
+/.idea/workspace.xml
 
 /downloader/.cache
 /downloader/*.cfg
